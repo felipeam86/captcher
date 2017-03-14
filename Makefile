@@ -87,17 +87,6 @@ doc:
 test-demos:
 	$(PYTEST) -q -x
 
-po:
-	xgettext --join-existing --sort-by-file --omit-header \
-		--add-comments \
-		-o i18n/captcha.po src/wheezy/captcha/*.py ; \
-	cp i18n/captcha.po i18n/en/LC_MESSAGES ; \
-	for l in `ls -d i18n/*/ | cut -d / -f 2`; do \
-		/bin/echo -n "$$l => " ; \
-		msgfmt -v i18n/$$l/LC_MESSAGES/captcha.po \
-			-o i18n/$$l/LC_MESSAGES/captcha.mo ; \
-	done
-
 run:
 	$(PYTHON) demos/app_web.py
 
