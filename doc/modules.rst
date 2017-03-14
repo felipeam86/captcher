@@ -1,8 +1,8 @@
 Modules
 =======
 
-wheezy.caching
+caching
 --------------
 
-.. automodule:: wheezy.captcha
+.. automodule:: captcha
    :members:

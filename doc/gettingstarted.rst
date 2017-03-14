@@ -5,27 +5,27 @@ Getting Started
 Install
 -------
 
-:ref:`wheezy.captcha` requires `python`_ version 2.4 to 2.7 or 3.2+.
+:ref:`captcher` requires `python`_ version 2.4 to 2.7 or 3.2+.
 It is operating system independent. You can install it from the `pypi`_
 site using `setuptools`_ (you need to specify an extra requirements per
 the imaging library of your choice)::
 
-    $ easy_install wheezy.captcha
-    $ easy_install wheezy.captcha[PIL]
-    $ easy_install wheezy.captcha[Pillow]
+    $ easy_install captcher
+    $ easy_install captcher[PIL]
+    $ easy_install captcher[Pillow]
 
 If you are using `virtualenv`_::
 
     $ virtualenv env
-    $ env/bin/easy_install wheezy.captcha
+    $ env/bin/easy_install captcher
 
 Develop
 -------
 
-You can get the `source code`_ using `mercurial`_::
+You can get the `source code`_ using `git`_::
 
-    $ hg clone http://bitbucket.org/akorn/wheezy.captcha
-    $ cd wheezy.captcha
+    $ git clone https://github.com/felipeam86/captcher
+    $ cd captcher
 
 Prepare `virtualenv`_ environment in *env* directory ::
 

@@ -10,7 +10,7 @@ except:
 extra = {}
 try:
     from Cython.Build import cythonize
-    p = os.path.join('src', 'wheezy', 'captcha')
+    p = os.path.join('captcher')
     extra['ext_modules'] = cythonize(
         [os.path.join(p, '*.py')],
         exclude=os.path.join(p, '__init__.py'),
@@ -29,11 +29,11 @@ except ImportError:
     install_requires.append('uuid')
 
 setup(
-    name='wheezy.captcha',
+    name='captcher',
     version='0.1',
-    description='A lightweight captcha library',
+    description='A lightweight captcher library',
     long_description=README,
-    url='https://bitbucket.org/akorn/wheezy.captcha',
+    url='https://github.com/felipeam86/captcher',
 
     author='Andriy Kornatskyy',
     author_email='andriy.kornatskyy at live.com',
@@ -64,10 +64,8 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
-    keywords='wsgi http captcha',
-    packages=['wheezy', 'wheezy.captcha'],
-    package_dir={'': 'src'},
-    namespace_packages=['wheezy'],
+    keywords='wsgi http captcher',
+    packages=['captcher'],
 
     zip_safe=False,
     install_requires=install_requires,
@@ -84,8 +82,6 @@ setup(
             'pytest',
             'pytest-pep8',
             'pytest-cov',
-            'wheezy.caching',
-            'wheezy.http'
         ],
     },
 

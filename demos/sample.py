@@ -1,17 +1,15 @@
 """
 """
 
-from wheezy.captcha.image import captcha
-
-from wheezy.captcha.image import background
-from wheezy.captcha.image import curve
-from wheezy.captcha.image import noise
-from wheezy.captcha.image import smooth
-from wheezy.captcha.image import text
-
-from wheezy.captcha.image import offset
-from wheezy.captcha.image import rotate
-from wheezy.captcha.image import warp
+from captcher.image import background
+from captcher.image import captcha
+from captcher.image import curve
+from captcher.image import noise
+from captcher.image import offset
+from captcher.image import rotate
+from captcher.image import smooth
+from captcher.image import text
+from captcher.image import warp
 
 
 if __name__ == '__main__':
@@ -31,5 +29,5 @@ if __name__ == '__main__':
         noise(),
         smooth()
     ])
-    image = captcha_image(random.sample(string.uppercase + string.digits, 4))
+    image = captcha_image(random.sample(string.ascii_uppercase + string.digits, 4))
     image.save('sample.jpg', 'JPEG', quality=75)

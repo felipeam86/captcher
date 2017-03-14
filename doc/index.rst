@@ -1,4 +1,4 @@
-.. _`wheezy.captcha`:
+.. _`captcher`:
 
 Wheezy Captcha
 ==============
@@ -6,7 +6,7 @@ Wheezy Captcha
 Introduction
 ------------
 
-:ref:`wheezy.captcha` is a `python`_ package written in pure Python code.
+:ref:`captcher` is a `python`_ package written in pure Python code.
 It is a lightweight captcha library that provides integration
 with (one of below must be installed):
 

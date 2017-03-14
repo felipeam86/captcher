@@ -3,12 +3,12 @@
 
 import random
 
-from wheezy.captcha.comp import Draw
-from wheezy.captcha.comp import Image
-from wheezy.captcha.comp import ImageFilter
-from wheezy.captcha.comp import getrgb
-from wheezy.captcha.comp import truetype
-from wheezy.captcha.comp import xrange
+from captcher.comp import Draw
+from captcher.comp import Image
+from captcher.comp import ImageFilter
+from captcher.comp import getrgb
+from captcher.comp import truetype
+from captcher.comp import xrange
 
 
 def captcha(drawings, width=200, height=75):
@@ -21,7 +21,7 @@ def captcha(drawings, width=200, height=75):
     return render
 
 
-# region: captcha drawers
+# region: captcher drawers
 
 def background(color='#EEEECC'):
     color = getrgb(color)
@@ -39,7 +39,7 @@ def smooth():
 
 
 def curve(color='#5C87B2', width=4, number=6):
-    from wheezy.captcha.bezier import make_bezier
+    from captcher.bezier import make_bezier
     if not callable(color):
         c = getrgb(color)
 

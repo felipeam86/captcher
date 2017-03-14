@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# wheezy.captcha documentation build configuration file, created by
+# captcher documentation build configuration file, created by
 # sphinx-quickstart on Fri Sep  9 20:36:50 2011.
 #
 # This file is execfile()d with the current directory set to its containing
@@ -48,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'wheezy.captcha'
+project = u'captcher'
 copyright = u'2011, Andriy Kornatskyy'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -197,7 +197,7 @@ html_show_copyright = False
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'wheezy.captchadoc'
+htmlhelp_basename = 'captchadoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -212,7 +212,7 @@ htmlhelp_basename = 'wheezy.captchadoc'
 # (source start file, target name, title, author, documentclass
 # [howto/manual]).
 latex_documents = [
-    ('index', 'wheezy.captcha.tex', u'wheezy.captcha Documentation',
+    ('index', 'captcher.tex', u'captcher Documentation',
      u'Andriy Kornatskyy', 'manual'),
 ]
 
@@ -245,6 +245,6 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'wheezy.captcha', u'wheezy.captcha Documentation',
+    ('index', 'captcher', u'captcher Documentation',
      [u'Andriy Kornatskyy'], 1)
 ]
