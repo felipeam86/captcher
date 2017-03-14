@@ -8,3 +8,6 @@ src/*.egg-info/
 *.pyo
 doc/_build
 *.mo
+*.c
+*.so
+*.egg-info
